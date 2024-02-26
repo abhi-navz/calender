@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar</title>
+    <title>March 2024</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
   </head>
   <body>
     <h1 style="text-align: center; text-decoration: underline">CALENDER 2024</h1>
     <div class="calendar">
-      <div class="month">February 2024</div>
+      <div class="month">March 2024</div>
       <div class="weekdays">
         <div class="weekday">Sun</div>
         <div class="weekday">Mon</div>
@@ -21,11 +21,12 @@
         <div class="weekday">Sat</div>
       </div>
       <div class="days">
-        <!-- February 2024 has 29 days, we can leave blank placeholders for the first few days -->
+        <!-- March 2024 has 31 days, we can leave blank placeholders for the first few days -->
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
         <div class="day">28</div>
         <div class="day">29</div>
-        <div class="day">30</div>
-        <div class="day">31</div>
         <div class="day currentMonthDay" onclick="showAlert('Clicked on 1')">
           1
         </div>
@@ -113,19 +114,28 @@
         <div class="day currentMonthDay" onclick="showAlert('Clicked on 29')">
           29
         </div>
+        <div class="day currentMonthDay" onclick="showAlert('Clicked on 29')">
+          30
+        </div>
+        <div class="day currentMonthDay" onclick="showAlert('Clicked on 29')">
+          31
+        </div>
         <!-- Blank placeholders for remaining days in the grid -->
         <div class="day">1</div>
         <div class="day">2</div>
-       
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
       </div>
     </div>
 
     <div class="btn-container">
-      <!-- Link to January -->
-      <a href="jan.html" class="btn">Previous Month</a>
-      <!-- Link to March -->
-      <a href="march.html" class="btn">Next Month</a>
-  </div>
+      <!-- Link to February -->
+      <a href="feb.html" class="btn">Previous Month</a>
+      <!-- Link to April -->
+      <a href="april.html" class="btn">Next Month</a>
+    </div>
 
     <div class="message-box" id="messageBox"></div>
   </body>

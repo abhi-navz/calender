@@ -1,3 +1,3 @@
 function showAlert(message) {
-    alert(message);
+  document.getElementById("messageBox").innerText = message;
   }
